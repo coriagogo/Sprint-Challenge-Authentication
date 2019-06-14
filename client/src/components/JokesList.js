@@ -18,7 +18,7 @@ class JokesList extends React.Component {
       })
       .then(res => {
         console.log(res.data);
-        this.setState({ jokes: res.data.jokes });
+        this.setState({ jokes: res.data });
       })
       .catch(error => 
         console.log(error));
